@@ -138,7 +138,7 @@ export const CartDrawer = () => {
                   onClick={handleCheckout}
                   className="w-full"
                   size="lg"
-                  disabled={items.length === 0 || isLoading || isSyncing}
+                  disabled={true || items.length === 0 || isLoading || isSyncing}
                 >
                   {isLoading || isSyncing ? (
                     <Loader2 className="h-4 w-4 animate-spin" />
